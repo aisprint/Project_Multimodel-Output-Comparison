@@ -254,7 +254,7 @@ with st.form(key='my_form'):
     temperature = st.slider("Temperature", 0.0, 1.0, 0.5)
     top_p = st.slider("Top_p", 0.0, 1.0, 0.9)
     max_tokens = st.number_input("Max tokens", min_value=1, max_value=4000, value=2000)
-    model_names = ["claude-3-haiku-20240307", "claude-3-sonnet-20240229", "claude-3-opus-20240229", "gpt-3.5-turbo", "gpt-4-turbo", "gemini-1.5-pro-latest"]
+    model_names = ["claude-3-haiku-20240307", "claude-3-sonnet-20240229", "claude-3-opus-20240229", "gpt-3.5-turbo", "gpt-4-turbo", "gpt-4o", "gemini-1.5-pro-latest"]
     model_selection = {model: st.checkbox(model, value=False) for model in model_names}
     # Translation dropdown in the form
     translation_options = st.selectbox("Translation", ["NONE", "JP", "EN"], index=0)
