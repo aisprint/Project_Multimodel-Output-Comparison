@@ -250,7 +250,7 @@ def translate_text(input_text, target_language):
 
 # Define a Streamlit form for input
 with st.form(key='my_form'):
-    prompt = st.text_area('Enter prompt:', 'ペンギンに関する短いエッセイを書いてください。', height=200)
+    prompt = st.text_area('Enter prompt:', 'Please write an essay about Penguin.', height=200)
     temperature = st.slider("Temperature", 0.0, 1.0, 0.5)
     top_p = st.slider("Top_p", 0.0, 1.0, 0.9)
     max_tokens = st.number_input("Max tokens", min_value=1, max_value=4000, value=2000)
